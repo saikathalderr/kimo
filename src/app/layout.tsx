@@ -1,14 +1,14 @@
-import "./globals.css";
-import { IBM_Plex_Mono } from "next/font/google";
+import './globals.css';
+import { IBM_Plex_Mono } from 'next/font/google';
 
 const ibmPlexMono = IBM_Plex_Mono({
-  subsets: ["latin-ext", "vietnamese"],
-  weight: ["300", "400", "500", "600", "700"],
+  subsets: ['latin-ext', 'vietnamese'],
+  weight: ['300', '400', '500', '600', '700'],
 });
 
 export const metadata = {
-  title: "Aloga",
-  description: "a website to promote tourism in Hawaii",
+  title: 'Aloga',
+  description: 'a website to promote tourism in Hawaii',
 };
 
 export default function RootLayout({
