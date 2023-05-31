@@ -3,7 +3,7 @@ import Guide from './guide';
 
 function TravelGuide() {
   return (
-    <div className="w-[100%] py-10 lg:w-[50%]">
+    <div className="py-10 pb-20 pt-0 lg:pb-0 lg:pt-10">
       <p className="py-5 pt-0 font-bold text-dark">Travel Guide</p>
       <Guide />
     </div>
