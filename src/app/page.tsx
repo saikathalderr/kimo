@@ -1,24 +1,14 @@
-import Image from 'next/image';
+import Hero from '@/components/hero';
+import Highlights from '@/components/highlights';
 
 export default function Home() {
   return (
     <main>
-      <div className="m:h-[560px] s:h-[480px] relative flex h-[560px] w-screen items-center justify-center">
-        <Image
-          src="/static/images/landing-background.jpg"
-          alt="landing-background"
-          fill={true}
-          style={{
-            objectFit: 'cover',
-            objectPosition: 'center center',
-          }}
-          priority
-        />
-        <h1 className="welcome-gradient absolute text-center text-6xl font-extrabold sm:text-6xl  md:text-9xl ">
-          Welcome
-          <br />
-          to Hawaii
-        </h1>
+      <Hero />
+      <div className="bg-white">
+        <div className="mx-auto my-0 px-[16px] md:w-[80vw] md:max-w-[1300px] md:px-0">
+          <Highlights />
+        </div>
       </div>
     </main>
   );
