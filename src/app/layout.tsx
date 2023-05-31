@@ -1,7 +1,7 @@
 import './globals.css';
-import { fonts } from '@/app/fonts/fonts';
-import Header from '@/app/components/header';
-import Footer from '@/app/components/footer';
+import { fonts } from '@/fonts/fonts';
+import Header from '@/components/header';
+import Footer from '@/components/footer';
 
 export const metadata = {
   title: 'Aloga',
