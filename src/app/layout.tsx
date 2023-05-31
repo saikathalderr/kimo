@@ -1,10 +1,6 @@
 import './globals.css';
-import { IBM_Plex_Mono } from 'next/font/google';
-
-const ibmPlexMono = IBM_Plex_Mono({
-  subsets: ['latin-ext', 'vietnamese'],
-  weight: ['300', '400', '500', '600', '700'],
-});
+import { fonts } from '@/app/fonts/fonts';
+import Header from '@/app/components/header';
 
 export const metadata = {
   title: 'Aloga',
@@ -18,7 +14,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={ibmPlexMono.className}>{children}</body>
+      <body className={fonts.ibmPlexMono.className}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
