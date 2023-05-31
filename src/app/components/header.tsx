@@ -16,15 +16,15 @@ function Header() {
     },
     {
       name: 'Surfing',
-      link: '/surfing',
+      link: '/highlight/surfing',
     },
     {
       name: 'Hula',
-      link: '/hula',
+      link: '/highlight/hula',
     },
     {
       name: 'Vulcano',
-      link: '/vulcano',
+      link: '/highlight/vulcano',
     },
   ];
   return (
