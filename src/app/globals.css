@@ -36,10 +36,29 @@ body {
   border-radius: 0.5rem;
 }
 
+.secondary-button {
+  font-family: 'greycliff';
+  background: transparent;
+  color: theme('colors.green');
+  padding: 0.625rem 1.5rem;
+  border-radius: 0.5rem;
+  border: 0.125rem solid theme('colors.green');
+}
+
 .primary-icon-button {
   width: 2.5rem;
   height: 2.5rem;
   background: theme('colors.light');
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.secondary-icon-button {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: transparent;
   border-radius: 50%;
   display: flex;
   justify-content: center;

@@ -9,8 +9,8 @@ function HighlightItem() {
           <Image
             src="/static/images/travel-guide.jpg"
             alt="Picture of the author"
-            layout="fill"
-            objectFit="cover"
+            fill
+            style={{ objectFit: 'cover' }}
           />
         </div>
         <div className="p-[24px]">
