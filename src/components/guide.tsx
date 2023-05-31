@@ -3,7 +3,7 @@ import React from 'react';
 
 function Guide() {
   return (
-    <div className="flex items-center justify-between rounded-md bg-white p-[24px]">
+    <div className="flex items-center justify-between rounded-lg bg-white p-[24px]">
       <div className="flex flex-col gap-[40px]">
         <div>
           <h2 className="text-2xl font-bold">Hadwin Malone</h2>
