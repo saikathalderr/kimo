@@ -17,6 +17,17 @@ body {
   color: theme('colors.dark');
 }
 
+.welcome-gradient {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.5) 6.44%,
+    #ffffff 95.08%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .primary-button {
   font-family: 'greycliff';
   background: theme('colors.green');

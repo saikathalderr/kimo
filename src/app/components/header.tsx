@@ -1,4 +1,5 @@
 import Link from 'next/link';
+
 import Icon from './icon';
 import Logo from './logo';
 
@@ -27,7 +28,7 @@ function Header() {
     },
   ];
   return (
-    <div className="fixed inset-x-0 mx-auto mt-[24px] bg-white px-[24px] py-[21px] sm:w-screen sm:rounded-none md:w-[80vw] md:rounded-lg">
+    <div className="fixed inset-x-0 z-10 mx-auto bg-white px-[24px] py-[21px] sm:mt-0 sm:w-screen sm:rounded-none md:mt-[24px] md:w-[80vw] md:rounded-lg">
       <div className="flex items-center justify-between">
         <Logo />
         <div className="ml-[80px] hidden flex-1 items-center justify-start md:flex">
