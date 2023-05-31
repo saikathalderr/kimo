@@ -1,6 +1,7 @@
 import './globals.css';
 import { fonts } from '@/app/fonts/fonts';
 import Header from '@/app/components/header';
+import Footer from '@/app/components/footer';
 
 export const metadata = {
   title: 'Aloga',
@@ -17,6 +18,7 @@ export default function RootLayout({
       <body className={fonts.ibmPlexMono.className}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

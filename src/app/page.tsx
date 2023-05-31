@@ -12,6 +12,7 @@ export default function Home() {
             objectFit: 'cover',
             objectPosition: 'center center',
           }}
+          priority
         />
         <h1 className="welcome-gradient absolute text-center text-6xl font-extrabold sm:text-6xl  md:text-9xl ">
           Welcome
