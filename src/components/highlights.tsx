@@ -14,7 +14,10 @@ function Highlights(props: HighlightsProps) {
       <div className="hide-scroll-bar flex overflow-x-scroll pb-10">
         <div className="flex flex-nowrap gap-[17px]">
           {highlights.map((highlight, idx) => (
-            <HighlightItem key={idx + 1} highlight={highlight} />
+            <HighlightItem
+              key={idx + 1 + 'highlight-item'}
+              highlight={highlight}
+            />
           ))}
         </div>
       </div>

@@ -3,3 +3,12 @@ export interface Highlight {
   description: string;
   image: string;
 }
+
+export interface Activity {
+  title: string;
+}
+
+export interface Category {
+  name: string;
+  activities: Activity[];
+}
