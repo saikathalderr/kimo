@@ -4,11 +4,18 @@ export interface Highlight {
   image: string;
 }
 
-export interface Activity {
+export interface CategoryActivity {
   title: string;
 }
 
 export interface Category {
   name: string;
-  activities: Activity[];
+  activities: CategoryActivity[];
+}
+
+export interface Activity {
+  name: string;
+  description: string;
+  image: string;
+  activities: CategoryActivity[];
 }

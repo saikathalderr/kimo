@@ -1,11 +1,20 @@
 import React from 'react';
 import Image from 'next/image';
 
-function Hero() {
+type HeroProps = {
+  title: string;
+  image?: string;
+};
+
+function Hero(props: HeroProps) {
+  const { title, image } = props;
+
+  const bgImage: string = image ?? '/static/images/landing-background.jpg';
+
   return (
     <div className="m:h-[560px] s:h-[480px] relative flex h-[560px] w-screen items-center justify-center">
       <Image
-        src="/static/images/landing-background.jpg"
+        src={bgImage}
         alt="landing-background"
         fill={true}
         style={{
@@ -14,11 +23,9 @@ function Hero() {
         }}
         priority
       />
-      <h1 className="welcome-gradient absolute text-center text-6xl font-extrabold sm:text-6xl  md:text-9xl ">
-        Welcome
-        <br />
-        to Hawaii
-      </h1>
+      <div className="welcome-gradient absolute w-[40%]	break-words text-center text-6xl font-extrabold sm:text-6xl md:text-9xl">
+        {title}
+      </div>
     </div>
   );
 }
