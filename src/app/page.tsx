@@ -3,13 +3,18 @@ import Highlights from '@/components/highlights';
 import Catergories from '@/components/catergories';
 import TravelGuide from '@/components/travelGuide';
 
-export default function Home() {
+import { getHighlights } from '@/controllers/highlights';
+
+export default async function Home() {
+  const highlightsData = getHighlights();
+  const [highlights] = await Promise.all([highlightsData]);
+
   return (
     <main>
       <Hero />
       <div className="bg-white">
         <div className="mx-auto my-0 px-[16px] md:w-[80vw] md:max-w-[1300px] md:px-0">
-          <Highlights />
+          <Highlights highlights={highlights} />
         </div>
       </div>
       <div>
