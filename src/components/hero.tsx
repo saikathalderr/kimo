@@ -23,7 +23,7 @@ function Hero(props: HeroProps) {
         }}
         priority
       />
-      <div className="welcome-gradient absolute w-[40%]	break-words text-center text-6xl font-extrabold sm:text-6xl md:text-9xl">
+      <div className="welcome-gradient absolute w-[50%] break-words text-center text-5xl font-extrabold sm:text-5xl md:text-8xl lg:text-9xl">
         {title}
       </div>
     </div>
