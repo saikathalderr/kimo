@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 
 type HeroProps = {
-  title: string;
+  title: React.ReactNode;
   image?: string;
 };
 
@@ -23,7 +23,7 @@ function Hero(props: HeroProps) {
         }}
         priority
       />
-      <div className="welcome-gradient absolute w-[50%] break-words text-center text-5xl font-extrabold sm:text-5xl md:text-8xl lg:text-9xl">
+      <div className="welcome-gradient absolute text-center text-5xl font-extrabold sm:text-5xl md:text-8xl lg:text-9xl">
         {title}
       </div>
     </div>

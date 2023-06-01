@@ -24,6 +24,11 @@ async function Header() {
     };
   });
 
+  menus.unshift({
+    name: 'Home',
+    link: '/',
+  });
+
   const menuItems = menus.map((menu) => (
     <div key={menu.name} className="mr-[40px] capitalize hover:underline">
       <Link href={menu.link}>{menu.name}</Link>

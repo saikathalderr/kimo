@@ -17,7 +17,13 @@ export default async function Home() {
 
   return (
     <main>
-      <Hero title="Welcome to Hawaii" />
+      <Hero
+        title={
+          <>
+            Welcome <br /> to Hawaii
+          </>
+        }
+      />
       <div className="bg-white">
         <div className="mx-auto my-0 px-[16px] md:w-[80vw] md:max-w-[1300px] md:px-0">
           <Highlights highlights={highlights} />

@@ -21,14 +21,27 @@ async function ActivityPage({ params }: NextPageProps) {
   const { image, description, activities } = activity as Activity;
   metadata.title = `${decodeURIComponent(slug)} | ${description}`;
 
+  const decodeSlug = decodeURIComponent(slug);
+
   return (
     <div>
       <Head>
         <title>
-          {decodeURIComponent(slug)} | {description}
+          {decodeSlug} | {description}
         </title>
       </Head>
-      <Hero title={decodeURIComponent(slug)} image={image} />
+      <Hero
+        title={
+          <>
+            {decodeSlug.split('-').map((word, idx) => (
+              <span key={idx + 1 + 'word'}>
+                {word} <br />
+              </span>
+            ))}
+          </>
+        }
+        image={image}
+      />
       <div className="bg-white">
         <div className="mx-auto my-0 px-[16px] md:w-[80vw] md:max-w-[1300px] md:px-0">
           <div className="py-10">
