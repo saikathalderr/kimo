@@ -25,12 +25,12 @@ export default async function Home() {
         }
       />
       <div className="bg-white">
-        <div className="mx-auto my-0 px-[16px] md:w-[80vw] md:max-w-[1300px] md:px-0">
+        <div className="mx-auto my-0 px-[16px] md:w-[75vw] md:max-w-[1300px] md:px-0">
           <Highlights highlights={highlights} />
         </div>
       </div>
       <div>
-        <div className="mx-auto my-0 grid px-[16px] md:w-[80vw] md:max-w-[1300px] md:grid-cols-1 md:gap-0 md:px-0 lg:grid-cols-2 lg:gap-8">
+        <div className="mx-auto my-0 grid px-[16px] md:w-[75vw] md:max-w-[1300px] md:grid-cols-1 md:gap-0 md:px-0 lg:grid-cols-2 lg:gap-8">
           <Categories categories={categories} />
           <TravelGuide />
         </div>
