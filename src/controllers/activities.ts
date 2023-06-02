@@ -8,5 +8,12 @@ export async function getActivity({ activityType }: { activityType: string }) {
       'Content-Type': 'application/json',
     },
   });
+
+  if (!resp.ok) {
+    throw new Error(
+      resp.statusText ||
+        `Something went wrong fetching activity - ${activityType}`,
+    );
+  }
   return resp.json();
 }

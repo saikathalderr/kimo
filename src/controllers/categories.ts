@@ -7,5 +7,10 @@ export async function getCategories() {
       'Content-Type': 'application/json',
     },
   });
+  if (!resp.ok) {
+    throw new Error(
+      resp.statusText || `Something went wrong fetching categories`,
+    );
+  }
   return resp.json();
 }

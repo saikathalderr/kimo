@@ -12,11 +12,9 @@ export const metadata = {
 async function ActivityPage({ params }: NextPageProps) {
   const { slug } = params;
 
-  const activityData = getActivity({
+  const activity = await getActivity({
     activityType: decodeURIComponent(slug),
   });
-
-  const [activity] = await Promise.all([activityData]);
 
   const { image, description, activities } = activity as Activity;
   metadata.title = `${decodeURIComponent(slug)} | ${description}`;
