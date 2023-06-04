@@ -11,7 +11,7 @@ function Highlights(props: HighlightsProps) {
   return (
     <div className="py-10">
       <p className="py-5 pt-0 font-bold text-dark">Highlights</p>
-      <div className="hide-scroll-bar flex overflow-x-scroll pb-10">
+      <div className="hide-scroll-bar scrollbar-hide flex overflow-x-scroll pb-10">
         <div className="flex flex-nowrap gap-[17px]">
           {highlights.map((highlight, idx) => (
             <HighlightItem

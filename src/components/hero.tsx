@@ -12,7 +12,7 @@ function Hero(props: HeroProps) {
   const bgImage: string = image ?? '/static/images/landing-background.jpg';
 
   return (
-    <div className="m:h-[560px] s:h-[480px] relative flex h-[560px] w-screen items-center justify-center">
+    <div className="m:h-[560px] s:h-[480px] relative flex h-[560px] items-center justify-center">
       <Image
         src={bgImage}
         alt="landing-background"
